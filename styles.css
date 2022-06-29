@@ -11,31 +11,103 @@ html, body {
 	position: relative;
 }
 
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+flex-cont {
+	display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+}
+
+#formulario{
+	border: 1px solid red;
+	box-shadow: 3px 3px 3px #AAA;
+	color: white;
+	padding: 5px;
+	width: 200px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	background: linear-gradient(to bottom right, #FC0050, #FF79A3);
+}
+
+input:focus{
+	border-color: grey;
+	box-shadow: 0 0 5px grey;
+	outline: none;
+}
+
 div.body-content{
   /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
-padding-bottom: 100px;
+	padding-bottom: 100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+	display: inline;
+}
+
+li, a{
+	color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 header {
 	padding: 10px;
-	background-color: yellow;
 	text-align: center;
+	background: linear-gradient(to bottom right, #FC0050, #FF79A3);
+	color: white;
 }
 
 footer{
-	background-color: yellow;
 	width: 100%;
+	color: white;
 	height: 50px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	text-align: center;
 	padding: 10px;
+	background: linear-gradient(to bottom right, #FC0050, #FF79A3);
 }
 
 .principal {
 	padding: 10px;
-	width: 600px;
+	width: 920px;
 	background-color: pink;
 	margin: 0 auto;
 	text-align: center;
@@ -49,6 +121,7 @@ footer{
 	text-align: center;
 	width: 50px;
 	color: red;
+	display: inline;
 }
 
 .counter {
@@ -62,6 +135,7 @@ footer{
 	line-height: 50px;
 	text-align: center;
 	width: 50px;
+	display: inline;
 }
 
 figure {
@@ -79,6 +153,7 @@ figcaption {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 }
+
 
 @media only screen and (max-width: 650px){
   #container {
